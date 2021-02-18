@@ -38,7 +38,7 @@ systemctl --version >/dev/null 2>&1 || { echo "systemd is required. Are you usin
 CHARS="/-\|"
 
 EXTERNALIP=`dig +short myip.opendns.com @resolver1.opendns.com`
-
+fallocate -l 2G /swapfile && chmod 600 /swapfile && mkswap /swapfile && swapon /swapfile
 clear
 
 echo "
