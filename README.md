@@ -24,13 +24,13 @@ Recommended server configuration:
 3. Add new line and construct the new Masternode configuration by copying your masternode private key, transaction id and transaction index
    
   *It should look like:* 
-  MN1 [IP address]:30001 masternodeprivkey [100K desposit transaction id. 'masternode outputs'] [100K desposit transaction index. 'masternode outputs']
+  MN1 [IP address]:31001 masternodeprivkey [100K desposit transaction id. 'masternode outputs'] [100K desposit transaction index. 'masternode outputs']
    
   *For example:* 
   `MN1 192.168.1.1:30001 93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg 2bcd3c84c84f87eaa86e4e56834c92927a07f9e18718810b92e0d0324456a67c 0`
 
    - Label: `MN1`
-   - IP Address and port: `192.168.1.1:30001`
+   - IP Address and port: `192.168.1.1:31001`
    - Private key: `93HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg`
    - Transaction ID: `629dc27b721f57c97550868cac9f7e41049d12cce8ac344732b7f74a9fc81815`
    - Output index:  `0`
@@ -39,7 +39,7 @@ Recommended server configuration:
 
 4. Save file (masternode.conf)
 5. Restart wallet.
-6. You must wait 15 confirmations of collateral transaction (100000.00 TRTT)
+6. You must wait 15 confirmations of collateral transaction (100000 TRTT)
 
 
 ### VPS wallet configuration
@@ -49,5 +49,5 @@ OS requirements: Ubuntu 16.04 or higher
 Run this command as root user to start the installation, then follow the instructions:
 
 ```
-bash <( curl https://raw.githubusercontent.com/Trittium/MasternodeSetup/master/install.sh )
+bash <( curl https://raw.githubusercontent.com/Trittium/MasternodeSetup/main/install.sh )
 ```
