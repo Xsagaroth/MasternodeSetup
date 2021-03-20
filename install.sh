@@ -110,9 +110,8 @@ cp $USERHOME/trittium-tx /usr/local/bin
 rm $USERHOME/trittium*
 chmod 755 /usr/local/bin/trittium*
 # Create .trittium2 directory
-mkdir $USERHOME/.trittium2
+mkdir $USERHOME/.trittium
 
-cd $USERHOME/.trittium2 && wget http://161.97.112.31/trtt.zip && unzip trtt.zip && rm trtt.zip && cd ..
 
 
 killall tritt*
@@ -120,8 +119,8 @@ sleep 6
 
 
 # Create trittium2.conf
-touch $USERHOME/.trittium2/trittium2.conf
-cat > $USERHOME/.trittium2/trittium2.conf << EOL
+touch $USERHOME/.trittium/trittium.conf
+cat > $USERHOME/.trittium/trittium.conf << EOL
 rpcuser=${RPCUSER}
 rpcpassword=${RPCPASSWORD}
 rpcallowip=127.0.0.1
@@ -130,12 +129,12 @@ server=1
 daemon=1
 maxconnections=256
 rpcport=30002
-masternodeaddr=${EXTERNALIP}:30001
+masternodeaddr=${EXTERNALIP}:31001
 masternodeprivkey=${KEY}
 masternode=1
 EOL
-chmod 0600 $USERHOME/.trittium2/trittium2.conf
-chown -R $USER:$USER $USERHOME/.trittium2
+chmod 0600 $USERHOME/.trittium/trittium.conf
+chown -R $USER:$USER $USERHOME/.trittium
 
 sleep 1
 
