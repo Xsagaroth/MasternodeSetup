@@ -178,7 +178,7 @@ clear
 sleep 1
 sleep 1
 clear
-su -c "/usr/local/bin/trittium-cli masternode status" $USER
+su -c "/usr/local/bin/trittium-cli getmasternodestatus" $USER
 sleep 5
 
 echo "" && echo "If you see @Masternode successfully started@ - Masternode setup completed." && echo ""
