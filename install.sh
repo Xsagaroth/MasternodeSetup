@@ -98,7 +98,7 @@ apt-get -qq install aptitude
   ufw default deny incoming
   ufw default allow outgoing
   ufw allow ssh
-  ufw allow 30001/tcp
+  ufw allow 31001/tcp
   yes | ufw enable
 
 # Install Trittium daemon
