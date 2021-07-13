@@ -3,9 +3,9 @@
 clear
 
 # Set these to change the version of Trittium to install
-TARBALLURL="https://github.com/Trittium/trittium/releases/download/v4.0.0.0/Trittium-4.0.0.0-Linux.zip"
-TARBALLNAME="Trittium-4.0.0.0-Linux.zip"
-TRTTVERSION="4.0.0.0"
+TARBALLURL="https://github.com/Trittium/trittium/releases/download/v4.0.1.0/Trittium-4.0.1.0-Linux.zip"
+TARBALLNAME="Trittium-4.0.1.0-Linux.zip"
+TRTTVERSION="4.0.1.0"
 
 #!/bin/bash
 
